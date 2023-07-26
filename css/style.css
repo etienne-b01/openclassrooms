@@ -9,6 +9,47 @@
     --filter-bg-color: #DEEBFF;
 }
 
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+header ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 30px;
+    font-size: 16px;
+    padding-top: 10px;
+}
+
+header a:link { 
+    text-decoration: none; 
+    color: #0065FC;
+}
+
+header a:visited {
+    text-decoration: none; 
+    color: #0065FC;
+}
+
+header a:hover {
+    text-decoration: none; 
+    color: #0065FC;
+    border-top: 1px solid #0065FC;
+}
+
+header a:active {
+    text-decoration: none; 
+    color: #0065FC;
+}
+
+header img {
+    padding-top: 30px;
+    display: block;
+}
+
 .fa-solid {
     color: var(--main-color);
 }
