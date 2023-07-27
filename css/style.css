@@ -37,7 +37,18 @@ header a:visited {
 header a:hover {
     text-decoration: none; 
     color: #0065FC;
-    border-top: 1px solid #0065FC;
+}
+
+@media screen and (max-width: 1024px) {
+    header a:hover {
+                    border-bottom: 1px solid #0065FC;
+     }
+}
+
+@media screen and (min-width: 1025px) {
+    header a:hover {
+                    border-top: 1px solid #0065FC;
+     }
 }
 
 header a:active {
