@@ -39,18 +39,6 @@ header a:hover {
     color: #0065FC;
 }
 
-@media screen and (max-width: 1024px) {
-    header a:hover {
-                    border-bottom: 1px solid #0065FC;
-     }
-}
-
-@media screen and (min-width: 1025px) {
-    header a:hover {
-                    border-top: 1px solid #0065FC;
-     }
-}
-
 header a:active {
     text-decoration: none; 
     color: #0065FC;
@@ -60,6 +48,40 @@ header img {
     padding-top: 30px;
     display: block;
 }
+
+.recherche {
+    display: flex;
+    flex-direction:row;
+    gap: 10px;
+    align-items:center;
+}
+
+.location_icon {
+    display: flex;
+    flex-direction:row;
+    align-items:center;
+    justify-content:space-evenly;
+    width: 50px;
+    height: 49px;
+    border-radius: 15px 0px 0px 15px;
+    border: 1px;
+    background-color: #F2F2F2;
+
+}
+
+
+.search_button {
+    
+}
+
+.filters {
+    
+}
+
+.info_icon {
+
+}
+
 
 .fa-solid {
     color: var(--main-color);
@@ -174,6 +196,18 @@ body {
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
 /****** Media queries ***********/
+@media screen and (max-width: 1024px) {
+    header a:hover {
+                    border-bottom: 1px solid #0065FC;
+     }
+}
+
+@media screen and (min-width: 1025px) {
+    header a:hover {
+                    border-top: 1px solid #0065FC;
+     }
+}
+
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) {
     .hebergements-and-populaires {
