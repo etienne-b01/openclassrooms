@@ -108,6 +108,11 @@ header img {
     font-weight: 700;
 }
 
+.filters:hover {
+    background-color: #DEEBFF;
+	text-decoration: none;
+}
+
 .info_icon {
     width:10px;
     height:10px;
