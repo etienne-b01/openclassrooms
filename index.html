@@ -28,13 +28,19 @@
   <body>
     <div class="main-container">
       <header>
-        <img src="images/logo/booki_logo.svg" alt="Logo du site Booki" />
-        <nav>
-          <ul>
-            <li><a href="#">Hébergements</a></li>
-            <li><a href="#">Activités</a></li>
-          </ul>
-        </nav>
+        <div class="header">
+          <div class="box">
+            <img src="images/logo/booki_logo.svg" alt="Logo du site Booki" />
+          </div>
+          <div class="box">
+            <nav>
+              <ul>
+                <li><a href="#">Hébergements</a></li>
+                <li><a href="#">Activités</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
       </header>
       <main>
         <section>
@@ -42,81 +48,116 @@
           <p>En plein centre-ville ou en pleine nature</p>
         </section>
         <section>
-          <form action="" method="post">
+          <form method="post">
             <div class="recherche">
               <div class="location_icon">
-                <img src="images/recherche/position.svg">
+                <p>
+                  <i class="fa-solid fa-location-dot" style="color: black"></i>
+                </p>
               </div>
               <div class="city">
                 <p>Marseille, France</p>
               </div>
-              <div>  
-                <input type="submit" value="Rechercher" class="search_button">
+              <div>
+                <input type="submit" value="Rechercher" class="search_button" />
               </div>
             </div>
-            <br>
+            <br />
             <div class="recherche">
               <div class="location_icon">
-                <img src="images/recherche/position.svg">
+                <p>
+                  <i class="fa-solid fa-location-dot" style="color: black"></i>
+                </p>
               </div>
               <div class="city">
                 <p>Marseille, France</p>
               </div>
               <div class="magnifier">
-                <!-- <img src="images/recherche/mag_glass.svg"> -->
-                <input type="image" src="images/recherche/mag_glass.svg" class="mag_image">
+                <i
+                  class="fa-solid fa-magnifying-glass icon-white"
+                  style="color: white"
+                ></i>
               </div>
             </div>
             <div class="recherche">
               <div class="filter_button"><p>Filtres</p></div>
-                <div class="filters"><img src="images/recherche/bank_note.svg"><a href="" >Economique</a></div>
-                <div class="filters"><img src="images/recherche/person.svg"><a href="" >Familial</a></div>
-                <div class="filters"><img src="images/recherche/heart.svg"><a href="" >Romantique</a></div>
-                <div class="filters"><img src="images/recherche/flame.svg"><a href="" >Nos pépites</a></div>               
-            </div>               
-            <div class="recherche">
-              <img src="images/recherche/i_letter.svg" class="info_icon">
-              <p>Plus de 500 logements sont disponibles dans cette ville</p>
+              <div class="filters">
+                <a href=""
+                  ><i
+                    class="fa-solid fa-money-bill-wave"
+                    style="color: #0065fc"
+                  ></i
+                  >&nbsp; Économique</a
+                >
+              </div>
+              <div class="filters">
+                <a href=""
+                  ><i class="fa-solid fa-person" style="color: #0065fc"></i
+                  >&nbsp; Familial</a
+                >
+              </div>
+              <div class="filters">
+                <a href=""
+                  ><i class="fa-solid fa-heart" style="color: #0065fc"></i
+                  >&nbsp; Romantique</a
+                >
+              </div>
+              <div class="filters">
+                <a href=""
+                  ><i class="fa-solid fa-fire" style="color: #0065fc"></i>&nbsp;
+                  Nos pépites</a
+                >
+              </div>
+            </div>
+            <div class="grid">
+              <div class="box">
+                <i class="fa-solid fa-info" style="color: #0065fc"></i>
+              </div>
+              <div class="box">
+                <p>
+                  &nbsp;Plus de 500 logements sont disponibles dans cette ville
+                </p>
+              </div>
             </div>
           </form>
         </section>
         <section>
           <div>
-          <h2>Hébergements à Marseille</h2>
-          <article>
-            <p>Hôtel du port</p>
-          </article>
-          <article>
-            <p>Hôtel chez Amina</p>
-          </article>
-          <article>
-            <p>Hôtel les mouettes</p>
-          </article>
-          <article>
-            <p>Hôtel de la mer</p>
-          </article>
+            <h2>Hébergements à Marseille</h2>
+            <article>
+              <p>Hôtel du port</p>
+            </article>
+            <article>
+              <p>Hôtel chez Amina</p>
+            </article>
+            <article>
+              <p>Hôtel les mouettes</p>
+            </article>
+            <article>
+              <p>Hôtel de la mer</p>
+            </article>
+            <article>
+              <p>Auberge la Canebière</p>
+            </article>
+            <article>
+              <p>Auberge le Panier</p>
+            </article>
+            <p>Afficher plus</p>
+          </div>
+        </section>
+        <aside>
+          <h2>Les plus populaires</h2>
           <article>
             <p>Auberge la Canebière</p>
           </article>
           <article>
-            <p>Auberge le Panier</p>
+            <p>Chambres d'hôtes Au cœur de l'eau</p>
           </article>
-          <p>Afficher plus</p>
-        </div>
-       </section>
-      <aside>
-        <h2>Les plus populaires</h2>
-        <article>
-          <p>Auberge la Canebière</p>
-        </article>
-        <article>
-          <p>Chambres d'hôtes Au cœur de l'eau</p>
-        </article>
-        <article>
-          <p>Hôtel Bleu et Blanc</p>
-        </article>
-      </aside>
-       <section>
+          <article>
+            <p>Hôtel Bleu et Blanc</p>
+          </article>
+        </aside>
+        <section>
           <h3>Activités à Marseille</h3>
           <article>
             <p>Vieux-port</p>
@@ -129,14 +170,16 @@
           </article>
           <article>
             <p>Notre-Dame-de-la-Garde</p>
-          </article>     
-       </section>
+          </article>
+        </section>
       </main>
-            <footer>
-          <p>Placeholder pour footer (liens de contact, les mentions légales, la politique de confidentialité, etc )
-            <nav>liens nav</nav>
-          </p>
-        </footer>
+      <footer>
+        <p>
+          Placeholder pour footer (liens de contact, les mentions légales, la
+          politique de confidentialité, etc )
+        </p>
+        <nav>liens nav</nav>
+      </footer>
       <!-- code originel
       <main>
         <div class="hebergements-and-populaires">
