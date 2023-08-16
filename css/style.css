@@ -86,10 +86,12 @@ header img {
   border-width: 1px 0px 1px 0px;
   border-color: #f2f2f2;
   margin-inline: -20px;
+  /* position: relative;
+  top: 5px;*/
 }
 
 .search_button {
-  height: 51px;
+  height: 49px;
   border-radius: 0px 15px 15px 0px;
   padding: 15px 16px 15px 16px;
   background: #0065fc;
@@ -101,18 +103,15 @@ header img {
   color: white;
 }
 
-.magnifier {
-  height: 51px;
-  width: 51px;
+.magnifier-button {
+  height: 49px;
+  width: 49px;
   border-radius: 15px 15px 15px 15px;
   background: #0065fc;
+  font-size: 18px;
+  -webkit-text-stroke: 0.5px;
+  border: 0px;
   box-shadow: 0px 5px 7px lightgray;
-}
-
-.magnifier i {
-  position: relative;
-  top: 17px;
-  left: 17px;
 }
 
 .filter_button {
@@ -288,6 +287,18 @@ body {
   header a:hover {
     border-top: 1px solid #0065fc;
     padding-top: 35px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .search_button {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  .magnifier-button {
+    display: none;
   }
 }
 
