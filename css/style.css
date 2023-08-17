@@ -172,13 +172,22 @@ header img {
 }
 
 .hebergements_new {
-  width: 60%;
+  width: 871px;
   background-color: #f2f2f2;
+  border-radius: 15px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
+}
+
+.hebergements_new_heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 15px;
+  margin-right: 550px;
 }
 
 .card_hebergements {
@@ -186,7 +195,7 @@ header img {
   background-color: white;
   border-radius: 20px;
   padding: 5px;
-  margin: 5px;
+  margin: 10px;
   filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
 }
 
@@ -238,6 +247,7 @@ body {
 
 .card-title {
   font-size: 16px;
+  font-weight: 700;
 }
 
 .euro {
