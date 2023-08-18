@@ -231,6 +231,12 @@ body {
   font-size: 22px;
 }
 
+.more {
+  font-size: 18px;
+  font-weight: 700;
+  padding-left: 15px;
+}
+
 .card {
   width: 80%;
   background-color: white;
