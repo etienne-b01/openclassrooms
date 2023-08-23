@@ -9,7 +9,7 @@
   --filter-bg-color: #deebff;
 }
 
-header {
+.header {
   display: flex;
   justify-content: space-between;
 }
@@ -21,13 +21,6 @@ header ul {
   gap: 30px;
   font-size: 16px;
   padding-top: 10px;
-}
-
-.header {
-  display: grid;
-  grid-template-columns: 40px 100px;
-  align-items: baseline;
-  column-gap: 600px;
 }
 
 a:link {
@@ -187,6 +180,7 @@ header img {
   background-color: white;
   border-radius: 20px;
   padding: 5px;
+  margin-top: 20px;
   filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
 }
 
@@ -345,6 +339,10 @@ body {
   width: 100%;
   height: 439px;
   border-radius: 15px 15px 0px 0px;
+}
+
+h4 {
+  padding-left: 20px;
 }
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
