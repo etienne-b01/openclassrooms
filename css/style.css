@@ -18,8 +18,8 @@ header ul {
   list-style-type: none;
   display: flex;
   flex-direction: row;
-  gap: 30px;
   font-size: 16px;
+  gap: 30px;
   padding-top: 10px;
 }
 
@@ -167,13 +167,6 @@ header img {
   justify-content: space-between;
   align-items: center;
 }
-
-/* .grey_frame {
-  width: 60%;
-  background-color: #f2f2f2;
-  border-radius: 15px;
-  padding: 15px;
-} */
 
 .card_hebergements {
   width: 31%;
@@ -355,12 +348,20 @@ h4 {
 }
 
 @media screen and (min-width: 1025px) {
-  header a:hover::before {
+  header .li-1 a:hover::before {
     border: 1px solid #0065fc;
     content: "";
     position: fixed;
-    top: 1px;
-    width: 5%;
+    top: 0px;
+    width: 110px;
+  }
+
+  header .li-2 a:hover::before {
+    border: 1px solid #0065fc;
+    content: "";
+    position: fixed;
+    top: 0px;
+    width: 60px;
   }
 }
 
