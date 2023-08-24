@@ -56,11 +56,19 @@ header a:active {
   color: #0065fc;
 }
 
+.search {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
 .recherche {
   display: flex;
   flex-direction: row;
   gap: 0px;
   align-items: center;
+  border-radius: 15px;
+  border: 1px solid aqua;
 }
 
 .location_icon {
@@ -71,7 +79,11 @@ header a:active {
   width: 50px;
   height: 49px;
   border-radius: 15px 0px 0px 15px;
-  background-color: #f2f2f2;
+  background-color: aqua;
+}
+
+.location_icon .fa-solid {
+  color: black;
 }
 
 .city {
@@ -80,9 +92,6 @@ header a:active {
   font-weight: 700;
   border-width: 0px;
   text-align: center;
-  border-top: 1px solid #f2f2f2;
-  border-bottom: 1px solid #f2f2f2;
-  margin-right: -15px;
   outline: none;
   padding: 0px;
 }
@@ -96,18 +105,11 @@ header a:active {
   font-size: 18px;
   font-weight: 700;
   color: white;
+  margin: -1px;
 }
 
-.magnifier-button {
-  color: white;
-  height: 49px;
-  width: 49px;
-  border-radius: 15px 15px 15px 15px;
-  background: #0065fc;
-  font-size: 18px;
-  -webkit-text-stroke: 0.5px;
-  border: 0px;
-  box-shadow: 0px 5px 7px lightgray;
+.search_button i {
+  display: none;
 }
 
 .filter_button {
@@ -187,8 +189,10 @@ header a:active {
 
 .card_hebergements img {
   object-fit: cover;
+  object-position: center;
+  aspect-ratio: 1;
   width: 100%;
-  height: 124px;
+  /* height: 124px; */
   border-radius: 15px 15px 0px 0px;
 }
 
@@ -335,18 +339,22 @@ body {
   padding: 0px;
   filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
   text-align: left;
+  display: flex;
+  flex-direction: column;
   /*   line-height: 20px; */
 }
 
 .activites-articles img {
   object-fit: cover;
-  width: 100%;
-  height: 439px;
+  flex: 1;
   border-radius: 15px 15px 0px 0px;
 }
 
 h4 {
   padding-left: 20px;
+  height: 40px;
+  display: flex;
+  align-items: center;
 }
 
 /* Section footer */
@@ -386,14 +394,23 @@ h4 {
   header a:hover {
     border-bottom: 2px solid #0065fc;
   }
-  .search_button {
+  .search_button span {
     display: none;
   }
 
+  .search_button i {
+    display: block;
+  }
+
+  .search_button {
+    border-radius: 15px;
+    box-shadow: 0px 5px 7px lightgray;
+  }
+
   .activites-articles img {
-    width: 100%;
-    min-height: 200px;
-    max-height: 200px;
+    height: 200px;
+    /* min-height: 200px;
+    max-height: 200px; */
   }
 
   .activites-articles {
@@ -465,6 +482,7 @@ h4 {
 @media (max-width: 767.98px) {
   .header {
     flex-direction: column;
+    align-items: center;
   }
 
   .top_links {
