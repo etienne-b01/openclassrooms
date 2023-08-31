@@ -12,13 +12,12 @@
 .header {
   display: flex;
   justify-content: space-between;
-  align-items: baseline;
+  align-items: center;
 }
 
 .top_links {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  justify-content: flex-end;
 }
 
 header ul {
@@ -27,6 +26,19 @@ header ul {
   flex-direction: row;
   font-size: 16px;
   column-gap: 50px;
+  margin: 0px;
+  padding: 0px;
+}
+
+header ul a {
+  display: block;
+  border-top: solid 2px transparent;
+  padding-top: 20px;
+  padding-bottom: 22px;
+}
+
+header ul a:hover {
+  border-color: var(--main-color);
 }
 
 a:link {
@@ -42,16 +54,6 @@ a:visited {
 a:hover {
   text-decoration: none;
   color: #0065fc;
-}
-
-header a:active {
-  text-decoration: none;
-  color: #0065fc;
-}
-
-header a {
-  display: block;
-  border: 2px solid transparent;
 }
 
 .search {
@@ -120,6 +122,7 @@ header a {
 
 .search_button i {
   display: none;
+  color: white;
 }
 
 .filter_button {
@@ -146,6 +149,11 @@ header a {
   color: black;
 }
 
+.filters i {
+  color: #0065fc;
+  margin-right: 10px;
+}
+
 .filters:hover {
   background-color: #deebff;
   text-decoration: none;
@@ -155,7 +163,7 @@ header a {
   display: inline;
 }
 
-.grid i {
+.filter_info i {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -165,12 +173,12 @@ header a {
   border: 2px solid #d9d9d9;
   width: 25px;
   height: 25px;
+  color: #0065fc;
 }
 
-.grid {
-  display: grid;
-  justify-items: start;
-  grid-template-columns: 20px 600px;
+.filter_info {
+  display: flex;
+  justify-items: flex-start;
   align-items: center;
   gap: 10px;
 }
@@ -213,7 +221,7 @@ body {
   background-color: white;
   border-radius: 20px;
   padding: 5px;
-  filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.1);
 }
 
 .card img {
@@ -269,7 +277,7 @@ body {
   border-radius: 20px;
   padding: 5px;
   margin-top: 20px;
-  filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.1);
 }
 
 .card_hebergements img {
@@ -330,30 +338,34 @@ body {
 .activites {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-between;
   gap: 20px;
-  width: 95%;
+  margin-top: 30px;
+}
+
+.activites-heading {
+  margin-top: 50px;
 }
 
 .activites-articles {
-  width: fit-content;
+  width: 22%;
   background-color: white;
   border-radius: 20px;
   padding: 0px;
-  filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.1);
   text-align: left;
   display: flex;
   flex-direction: column;
 }
 
 .activites-articles img {
-  width: 298px;
-  height: 380px;
+  flex: 1;
   object-fit: cover;
+  object-position: center;
   border-radius: 15px 15px 0px 0px;
 }
 
-h4 {
+.activites-articles h4 {
   padding-left: 20px;
   height: 40px;
   display: flex;
@@ -397,17 +409,10 @@ h4 {
   .magnifier-button {
     display: none;
   }
-
-  header a:hover {
-    border-top: 2px solid #0065fc;
-  }
 }
 
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) {
-  header a:hover {
-    border-bottom: 2px solid #0065fc;
-  }
   .search_button span {
     display: none;
   }
@@ -475,11 +480,6 @@ h4 {
   .activites-heading {
     margin-left: 30px;
   }
-
-  .filters_list,
-  .activites {
-    margin-left: 15px;
-  }
 }
 
 /* Small devices (phones, less than 768px) */
@@ -531,8 +531,7 @@ h4 {
   .populaires-cards {
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
-    align-content: center;
+    align-items: center;
   }
 
   .populaires-cards img {
@@ -541,7 +540,7 @@ h4 {
   }
 
   .populaires-cards .card {
-    width: 335px;
+    width: 100%;
   }
 
   .hebergements-and-populaires .hebergements {
@@ -554,12 +553,12 @@ h4 {
   }
 
   .card_hebergements {
-    width: 335px;
+    width: 100%;
   }
 
   .card_hebergements img {
     height: 124px;
-    width: 335px;
+    width: 100%;
   }
 
   .card {
@@ -569,8 +568,7 @@ h4 {
   .activites {
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
-    align-content: center;
+    align-items: center;
   }
 
   .activites-articles {
