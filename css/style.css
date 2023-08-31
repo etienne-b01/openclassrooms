@@ -466,6 +466,18 @@ h4 {
   .populaires-cards .card-subtitle {
     font-size: 13px;
   }
+
+  .intro,
+  .recherche,
+  .filter_button,
+  .grid,
+  .activites-heading {
+    margin-left: 30px;
+  }
+
+  .filters_list {
+    margin-left: 15px;
+  }
 }
 
 /* Small devices (phones, less than 768px) */
