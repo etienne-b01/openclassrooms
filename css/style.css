@@ -15,25 +15,18 @@
   align-items: baseline;
 }
 
+.top_links {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
 header ul {
   list-style-type: none;
   display: flex;
   flex-direction: row;
   font-size: 16px;
-  gap: 30px;
-  padding-top: 10px;
-}
-
-.logo {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-}
-
-.top_links {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
+  column-gap: 50px;
 }
 
 a:link {
@@ -54,6 +47,11 @@ a:hover {
 header a:active {
   text-decoration: none;
   color: #0065fc;
+}
+
+header a {
+  display: block;
+  border: 2px solid transparent;
 }
 
 .search {
@@ -191,7 +189,7 @@ header a:active {
 }
 
 .card_hebergements {
-  width: 31%;
+  width: fit-content;
   background-color: white;
   border-radius: 20px;
   padding: 5px;
@@ -203,8 +201,8 @@ header a:active {
   object-fit: cover;
   object-position: center;
   aspect-ratio: 1;
-  width: 100%;
-  /* height: 124px; */
+  width: 250px;
+  height: 124px;
   border-radius: 15px 15px 0px 0px;
 }
 
@@ -299,8 +297,8 @@ body {
 }
 
 .populaires-cards img {
-  width: 33%;
-  height: 136px;
+  width: 123px;
+  height: 144px;
   border-top-left-radius: 20px;
   border-bottom-left-radius: 20px;
 }
@@ -337,7 +335,7 @@ body {
 }
 
 .activites-articles {
-  width: 30%;
+  width: fit-content;
   background-color: white;
   border-radius: 20px;
   padding: 0px;
@@ -345,12 +343,12 @@ body {
   text-align: left;
   display: flex;
   flex-direction: column;
-  /*   line-height: 20px; */
 }
 
 .activites-articles img {
+  width: 298px;
+  height: 380px;
   object-fit: cover;
-  flex: 1;
   border-radius: 15px 15px 0px 0px;
 }
 
@@ -394,6 +392,17 @@ h4 {
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
 /****** Media queries ***********/
+@media (min-width: 1025px) {
+  .magnifier-button {
+    display: none;
+  }
+
+  header a:hover {
+    border-top: 2px solid #0065fc;
+  }
+}
+
+/* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) {
   header a:hover {
     border-bottom: 2px solid #0065fc;
@@ -412,40 +421,17 @@ h4 {
   }
 
   .activites-articles img {
-    height: 200px;
-    /* min-height: 200px;
-    max-height: 200px; */
+    object-fit: cover;
+    width: 194px;
+    min-height: 200px;
+    max-height: 200px;
   }
 
   .activites-articles {
     height: 270px;
-  }
-}
-
-@media (min-width: 1025px) {
-  .magnifier-button {
-    display: none;
+    width: 194px;
   }
 
-  header .li-1 a:hover::before {
-    border: 1px solid #0065fc;
-    content: "";
-    position: fixed;
-    top: 0px;
-    width: 110px;
-  }
-
-  header .li-2 a:hover::before {
-    border: 1px solid #0065fc;
-    content: "";
-    position: fixed;
-    top: 0px;
-    width: 60px;
-  }
-}
-
-/* Medium devices (tablets, less/equal than 1024px) */
-@media (max-width: 1024px) {
   .filters_section {
     flex-direction: column;
   }
@@ -480,10 +466,6 @@ h4 {
   .populaires-cards .card-subtitle {
     font-size: 13px;
   }
-
-  .activites-articles img {
-    height: 20%;
-  }
 }
 
 /* Small devices (phones, less than 768px) */
@@ -493,8 +475,27 @@ h4 {
     align-items: center;
   }
 
-  .top_links {
-    justify-content: space-around;
+  header ul {
+    column-gap: 0px;
+  }
+
+  .top_links,
+  nav {
+    width: 100%;
+    margin: 0px;
+    gap: 0px;
+  }
+
+  ul {
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
+  li {
+    width: 100%;
+    text-align: center;
   }
 
   .filters_section {
@@ -516,6 +517,8 @@ h4 {
   .populaires-cards {
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
   }
 
   .populaires-cards img {
@@ -524,7 +527,11 @@ h4 {
   }
 
   .populaires-cards .card {
-    width: 100%;
+    width: 335px;
+  }
+
+  .hebergements-and-populaires .hebergements {
+    background-color: white;
   }
 
   .hebergements_new {
@@ -533,7 +540,7 @@ h4 {
   }
 
   .card_hebergements {
-    width: 100%;
+    width: 335px;
   }
 
   .card_hebergements img {
@@ -545,13 +552,15 @@ h4 {
     width: 100%;
   }
 
-  .activites-articles {
-    width: 100%;
-  }
-
   .activites {
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+  }
+
+  .activites-articles {
+    width: 315px;
   }
 
   .activites-articles img {
