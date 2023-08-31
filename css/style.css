@@ -475,7 +475,8 @@ h4 {
     margin-left: 30px;
   }
 
-  .filters_list {
+  .filters_list,
+  .activites {
     margin-left: 15px;
   }
 }
