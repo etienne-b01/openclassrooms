@@ -56,6 +56,15 @@ a:hover {
   color: #0065fc;
 }
 
+.intro h1 {
+  padding-bottom: 0px;
+  margin-bottom: -5px;
+}
+
+.intro p {
+  margin-bottom: 35px;
+}
+
 .search {
   display: flex;
   flex-direction: column;
@@ -181,6 +190,7 @@ a:hover {
   justify-items: flex-start;
   align-items: center;
   gap: 10px;
+  margin-top: 25px;
 }
 
 .fa-solid {
@@ -209,7 +219,7 @@ body {
   font-size: 18px;
   font-weight: 700;
   color: black;
-  padding-left: 15px;
+  padding-top: 15px;
 }
 
 .more a {
@@ -417,6 +427,11 @@ body {
 
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) {
+  header ul a {
+    border-top: none;
+    border-bottom: solid 2px transparent;
+  }
+
   .search_button span {
     display: none;
   }
@@ -472,9 +487,12 @@ body {
   .intro,
   .recherche,
   .filter_button,
-  .grid,
-  .activites-heading {
+  .grid {
     margin-left: 30px;
+  }
+
+  .activites-heading {
+    margin-left: 5px;
   }
 }
 
@@ -572,8 +590,6 @@ body {
   }
 
   .activites-articles img {
-    /* height: 141px;
-    width: 315px; */
     flex: 1;
     object-fit: cover;
     object-position: center;
@@ -593,10 +609,14 @@ body {
 
   .intro,
   .recherche,
+  .filter_info,
   .filter_button,
   .filters_list,
-  .grid,
-  .activites-heading {
+  .grid {
     margin-left: 30px;
+  }
+
+  .activites-heading {
+    margin-left: 0px;
   }
 }
