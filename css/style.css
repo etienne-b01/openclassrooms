@@ -335,16 +335,20 @@ body {
 }
 
 /**********Activités************/
+
+.activites-heading {
+  margin-top: 50px;
+  padding-left: 20px;
+}
+
 .activites {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   gap: 20px;
   margin-top: 30px;
-}
-
-.activites-heading {
-  margin-top: 50px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .activites-articles {
@@ -380,7 +384,7 @@ body {
   gap: 100px;
   background-color: #f2f2f2;
   float: left;
-  margin-top: 20px;
+  margin-top: 70px;
   width: 100%;
 }
 
@@ -427,15 +431,7 @@ body {
   }
 
   .activites-articles img {
-    object-fit: cover;
-    width: 194px;
-    min-height: 200px;
     max-height: 200px;
-  }
-
-  .activites-articles {
-    height: 270px;
-    width: 194px;
   }
 
   .filters_section {
@@ -568,16 +564,19 @@ body {
   .activites {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    justify-content: center;
   }
 
   .activites-articles {
-    width: 315px;
+    width: 100%;
   }
 
   .activites-articles img {
-    height: 141px;
-    width: 315px;
+    /* height: 141px;
+    width: 315px; */
+    flex: 1;
+    object-fit: cover;
+    object-position: center;
   }
 
   .footer {
