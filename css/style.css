@@ -71,7 +71,7 @@ a:hover {
   align-items: flex-start;
 }
 
-.recherche {
+.search_bar {
   display: flex;
   flex-direction: row;
   gap: 0px;
@@ -166,10 +166,6 @@ a:hover {
 .filters:hover {
   background-color: #deebff;
   text-decoration: none;
-}
-
-.recherche_info p {
-  display: inline;
 }
 
 .filter_info i {
@@ -272,7 +268,7 @@ body {
   width: 65%;
 }
 
-.hebergements_new {
+.hebergements_layout {
   display: flex;
   flex-wrap: wrap;
   gap: 15px 10px;
@@ -486,7 +482,7 @@ body {
   }
 
   .intro,
-  .recherche,
+  .search_bar,
   .filter_info,
   .grid {
     margin-left: 25px;
@@ -590,7 +586,7 @@ body {
     background-color: white;
   }
 
-  .hebergements_new {
+  .hebergements_layout {
     display: flex;
     flex-direction: column;
   }
@@ -637,7 +633,7 @@ body {
   }
 
   .intro,
-  .recherche,
+  .search_bar,
   .filter_info,
   .filter_button,
   .filters_list,
