@@ -46,46 +46,45 @@
           <p>En plein centre-ville ou en pleine nature</p>
         </section>
         <section>
-          <form method="post" class="search">
-            <div class="search_bar">
-              <div class="location_icon">
-                <i class="fa-solid fa-location-dot"></i>
-              </div>
-              <!-- début form -->
-              <input type="text" value="Marseille, France" class="city" />
-              <div>
+          <div class="search_bar">
+            <div class="location_icon">
+              <i class="fa-solid fa-location-dot"></i>
+            </div>
+            <div>
+              <form method="post">
+                <input type="text" value="Marseille, France" class="city" />
                 <button class="search_button">
                   <i class="fa-solid fa-magnifying-glass icon-white"></i>
                   <span>Rechercher</span>
                 </button>
+              </form>
+            </div>
+          </div>
+          <br />
+          <div class="filters_section">
+            <div class="filter_button"><p>Filtres</p></div>
+            <div class="filters_list">
+              <div class="filters">
+                <a href=""
+                  ><i class="fa-solid fa-money-bill-wave"></i>Économique</a
+                >
               </div>
-              <!-- fin form -->
-            </div>
-            <br />
-            <div class="filters_section">
-              <div class="filter_button"><p>Filtres</p></div>
-              <div class="filters_list">
-                <div class="filters">
-                  <a href=""
-                    ><i class="fa-solid fa-money-bill-wave"></i>Économique</a
-                  >
-                </div>
-                <div class="filters">
-                  <a href=""><i class="fa-solid fa-person"></i>Familial</a>
-                </div>
-                <div class="filters">
-                  <a href=""><i class="fa-solid fa-heart"></i>Romantique</a>
-                </div>
-                <div class="filters">
-                  <a href=""><i class="fa-solid fa-fire"></i>Nos pépites</a>
-                </div>
+              <div class="filters">
+                <a href=""><i class="fa-solid fa-person"></i>Familial</a>
+              </div>
+              <div class="filters">
+                <a href=""><i class="fa-solid fa-heart"></i>Romantique</a>
+              </div>
+              <div class="filters">
+                <a href=""><i class="fa-solid fa-fire"></i>Nos pépites</a>
               </div>
             </div>
-            <div class="filter_info">
-              <i class="fa-solid fa-info"></i>
-              Plus de 500 logements sont disponibles dans cette ville
-            </div>
-          </form>
+          </div>
+          <div class="filter_info">
+            <i class="fa-solid fa-info"></i>
+            Plus de 500 logements sont disponibles dans cette ville
+          </div>
+          <!-- </form> -->
         </section>
         <div class="hebergements-and-populaires">
           <section class="hebergements">
